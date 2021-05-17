@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Account_Executor">
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.GenerateTestNGReport"/> 
+		</listeners> -->
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.MyTransformer"/> 
+		</listeners> -->
+	
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="applicationURL" value="http://icedqngvm1.eastus.cloudapp.azure.com:4200/" />
+		<parameter name="userName" value="account_executor" />
+		<parameter name="password" value="123" />
+		<parameter name="os" value="Windows" />
+		<parameter name="db" value="Oracle" />
+		<parameter name="cycleId" value="26c463de-55b4-487e-90e2-29b87cf4dd50" />
+		<parameter name="version" value="" />
+		<parameter name="versionId" value="" />
+		<parameter name="fixVersionId" value="" />
+		<parameter name="projectId" value="11752" />
+		<parameter name="projectKey" value="NG21" />
+		<parameter name="executionKey" value="NG21-930" />
+		<parameter name="planKey" value="IC2-4416" />
+		<parameter name="assignee" value="pdt" />
+		<parameter name="createIssue" value="false" />
+		<parameter name="updateXrayStatus" value="true" />
+		<parameter name="sendMail" value="true" />
+		<parameter name="seqNumber" value="1" />
+		<parameter name="logging" value="true" />
+		<parameter name="beforeSuiteLogin" value="true" />
+
+
+
+
+		<test name="Account_Executor">
+
+
+			<classes>
+
+								
+				<class
+					name="nexgen.automation.framework.administration.testcases.AccountsTest">
+					<methods>
+					
+	 				
+					<include name="verifyAccountExecutorShouldNotAccessUserSection" />
+					
+					<include name="verifyAccountExecutorShouldNotAccessGroupSection" />
+					
+					<include name="verifyAccountExecutorAccessOnListOfAccounts" />
+					
+					<include name="verifyAccountExecutorCanRefreshAccountListingPage" />
+					
+					<include name="verifyAccountSearchByAccountExecutor" />
+						
+					<include name="verifyAccountExecutorAbleToDiscardUnsavedChangesInAccount" />
+				
+					<include name="verifyAccountExecutorAccessListOfRoles" />
+				
+					<include name="verifyAccountExecutorAbleToReadAccountDetails" />
+				
+					<include name="verifyAccountExecutorShouldNotAbleToUpdateExistingAccount" />
+				
+					<include name="verifyAccountExecutorShouldNotAbleToAddUserGroupInAccount" />
+				
+					<include name="verifyRoleAssignWindowDetailsInsideAccountForAccountExecutor" />
+				
+					<include name="verifyAccountExecutorCanRefreshUserListUnderUserGroupTabInAccount" />
+				
+					<include name="verifyAccountExecutorShouldNotAbleToRemoveUserFromTheAccount" />
+								
+					<include name="verifyAccountExecutorShouldReadAllListedUserGroupsAndWorkspaceInsideTheAccount" />
+								
+					<include name="verifyAccountExecutorShouldNotAbleToCreateWorkspaceFromAccountSection" />
+				
+					<include name="verifyAccountExecutorCanRefreshUserListUnderWorkspaceTabInAccount" />
+				
+					<include name="verifyAccountExecutorAccessOnListOfWorkspaces" />
+					
+					<include name="verifyAccountExecutorWithInheritedWorkspacesList" />
+					
+					<include name="verifyAccountExecutorShouldNotCreateWorkspaceFromWorkspaceSection" />
+							
+					<include name="verifyAccountExecutorShouldNotUpdateExistingWorkspace" />
+					
+					<include name="verifyAccountExecutorShouldNotAbleToAddUserGroupInWorkspace" />
+				
+					<include name="verifyRoleAssignWindowDetailsInsideWorkspaceForAccountExecutor" />
+				
+					<include name="verifyAccountExecutorShouldNotAbleToRemoveUserFromTheWorkspace" />
+					
+					<include name="verifyAccountExecutorCanRefreshUserList" />
+					
+					<include name="verifyAccountExecutorCanAccessAccountWhenRoleAssignedAtGrouplevel" />
+					
+					 
+				
+			
+					</methods>
+
+				</class>
+
+			</classes>
+		</test>
+</suite>

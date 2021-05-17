@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Generic">
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.GenerateTestNGReport"/> 
+		</listeners> -->
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.MyTransformer"/> 
+		</listeners> -->
+
+	<test name="GenericTest">
+		<!-- <parameter name="browser" value="headlessChrome" /> -->
+		<parameter name="browser" value="chrome" />
+		<parameter name="applicationURL"
+			value="http://icedqngvm1.eastus.cloudapp.azure.com:4200/" />
+		<parameter name="userName" value="icedq.admin" />
+		<parameter name="password" value="icedq.admin" />
+		<parameter name="os" value="Windows" />
+		<parameter name="db" value="Oracle" />
+		<parameter name="cycleId"
+			value="26c463de-55b4-487e-90e2-29b87cf4dd50" />
+		<parameter name="version" value="15.1.0" />
+		<parameter name="versionId" value="14622" />
+		<parameter name="fixVersionId" value="" />
+		<parameter name="projectId" value="11300" />
+		<parameter name="projectKey" value="IC2" />
+		<parameter name="executionKey" value="IC2-4487" />
+		<parameter name="planKey" value="IC2-4416" />
+		<parameter name="assignee" value="pdt" />
+		<parameter name="createIssue" value="false" />
+		<parameter name="updateXrayStatus" value="false" />
+		<parameter name="sendMail" value="true" />
+		<parameter name="seqNumber" value="1" />
+		<parameter name="logging" value="true" />
+
+		<!--<groups> <dependencies> <group name="DepthFirst" depends-on="BreadthFirst"></group> 
+			</dependencies> </groups> -->
+
+		<classes>
+
+			<class name="nexgen.automation.framework.otherpagesTest.LoginTest">
+				<methods>
+
+					<include name="verifyloginIntoApplication" />
+					
+					<include name="verifyLoginLogoutFunctionality" />
+					
+					<include name="verifyLoginWithInvalidUserData" />
+					
+					<include name="verifyforgotPasswordLink_BackToLogin" />
+					
+					<include name="verifyForgetPasswordWithValid_InvalidData" />
+					
+					<include name="verifyLoginWithValidUserData" />
+					
+					
+				<!-- 	<include name="SignInAzureAD1st" />
+					<include name="SignInAzureAD2nd" />
+				 -->
+					
+				</methods>
+			</class>
+
+			
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,101 @@
+#Users:
+Vivek Ramteke --vivekr
+icedq admin --icedq.admin
+Dhawal Thakre --wip_dhawal
+Neha Kharbade --nehak
+Jack K --jack
+Mathew Truth --mathewt
+Dhawal Workspace2 --workspace_dhawal2
+Dhawal Workspace1 --workspace_dhawal1
+Brian Mark --block2
+Abhilesh Kathote --abhileshk
+Torana User1 --toranauser1
+
+
+#Group:
+QA_Group
+Auto_Group_NextgenQA--del after script run
+WIP_Dhawal
+Group_Dhawal_1
+Group_Dhawal_2
+
+#Accouts:
+WIP_Vivek
+WIP_Dhawal
+nk_NextGenQA
+Demo_Testing
+ToranaAccount_1
+ToranaAccount_2
+
+
+#Workspace:
+WIP_Vivek-WS1
+WIP_Vivek-WS2
+Dhawal_WIP_WS
+WIP_Abhi
+Auto_Testing
+
+
+
+############################## Vivek ########################################
+Users::::::::::::::::::::::::
+Torana User1 ----toranauser1
+Account Owner ----account_owner
+Account Contributor ----account_contributor
+Account Executor ----account_executor
+Account Reader ----account_reader
+Vivek Ramteke ----vivekr
+
+Groups:::::::::::::::::::::::::
+AccountExecutorGroup
+AccountReaderGroup
+QA_Group
+Zone_A
+Zone_B
+Zone_C
+Zone_D
+
+Accounts:::::::::::::::::::::::::
+Name--Desc
+ReaderAccount--ReaderAccount
+ExecutorAccount--ExecutorAccount
+iCEDQ_Account--iCEDQ_Account_Description
+NextGenAccount--NextGenAccountDesc
+ToranaAccount_1--ToranaAccount_1
+ToranaAccount_2--ToranaAccount_2
+WIP_Vivek--WIP_Vivek
+
+Workspaces:::::::::::::::::::::::::
+WIP_Vivek-WS1
+WIP_Vivek-WS2
+Account2_Workspace1
+Account2_Workspace2
+ToranaAccount__Workspace
+NextGen_QA
+ExecutorWorkspace
+ReaderWorkspace
+
+=======================================Role Based ======================================================================
+
+====================Account Owner==============
+Accounts: WIP_Vivek , ToranaAccount_1, ToranaAccount_2
+Workspaces: WIP_Vivek-WS1, WIP_Vivek-WS2, ToranaAccount1__Workspace1, Account2_Workspace1, Account2_Workspace2, 
+
+======================Account Contributor=====================================
+Account: ContributorAccount
+Workspaces: ContributorWorkspace
+
+==========================Account Executor=================================
+Account: ExecutorAccount
+Workspaces: ExecutorWorkspace
+Groups: AccountExecutorGroup
+===========================Account Reader================================
+Account: ReaderAccount
+Workspaces: ReaderWorkspace
+Groups: AccountReaderGroup
+
+
+====================Workspace Owner==============
+User: workspace_owner,workspace_contributor, workspace_executor, workspace_reader
+Account: Workspaces, DND_Account
+Workspace: WorkspaceOwner, WorkspaceContributor, WorkspaceExecutor, WorkspaceReader, DND_Workspace

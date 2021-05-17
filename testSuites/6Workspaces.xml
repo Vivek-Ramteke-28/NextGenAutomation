@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Admin_Workspace">
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.GenerateTestNGReport"/> 
+		</listeners> -->
+
+	<!-- <listeners> <listener class-name="icedq.automation.framework.reports.MyTransformer"/> 
+		</listeners> -->
+	<parameter name="browser" value="chrome" />
+	<parameter name="applicationURL"
+		value="http://icedqngvm1.eastus.cloudapp.azure.com:4200/" />
+	<parameter name="userName" value="icedq.admin" />
+	<parameter name="password" value="icedq.admin" />
+	<parameter name="os" value="Windows" />
+	<parameter name="db" value="Oracle" />
+	<parameter name="cycleId"
+		value="26c463de-55b4-487e-90e2-29b87cf4dd50" />
+	<parameter name="version" value="" />
+	<parameter name="versionId" value="" />
+	<parameter name="fixVersionId" value="" />
+	<parameter name="projectId" value="11752" />
+	<parameter name="projectKey" value="NG21" />
+	<parameter name="executionKey" value="NG21-885" />
+	<parameter name="planKey" value="IC2-4416" />
+	<parameter name="assignee" value="pdt" />
+	<parameter name="createIssue" value="false" />
+	<parameter name="updateXrayStatus" value="true" />
+	<parameter name="sendMail" value="true" />
+	<parameter name="seqNumber" value="1" />
+	<parameter name="logging" value="true" />
+	<parameter name="beforeSuiteLogin" value="true" />
+
+
+
+	<test name="Admin_Workspace">
+
+
+		<classes>
+
+			<class
+				name="nexgen.automation.framework.administration.testcases.WorkspacesTest">
+				<methods>
+
+
+
+					<include name="verifyButtonVisiblityOnWorkspaceLandingpage" />
+					
+					<include name="verifyRefreshFunctionalityOnWorkspaceLandingpage"/>
+					
+										
+					<include name="verifyWorkspaceLandingPageDetails" />
+					
+					<include name="verifyWorkspaceNameShouldNotAcceptSpecialChar" />
+					
+					<include name="verifyWorkspaceNameShouldAcceptSpecialChar" />
+					
+					<include name="verifyWorkspaceNameShouldNotAcceptMoreThan50Char" />
+					
+					<include name="verifyWorkspaceDescriptionShouldNotAcceptMoreThan250Char" />
+					
+					<include name="verifyWorkspaceNameShouldValidateToEnterDetails" />
+					
+					<include name="verifyWorkspaceSearchFromListOfWorkspaces" />
+					
+					 <include name="verifyRoleAssignmentWindows" />
+
+					<include name="verifyWorkspaceShouldNotBeCreatedWithSameWorkspaceName" />
+					
+				
+					<include name ="verifyDiscardDetailsInNewWorkspace"/>
+					
+					<include name ="verifyDiscardDetailsInExistingWorksapce"/>
+					
+					<include name ="verifySaveButtonEnabledOrNot"/>
+					
+					<include name ="verifycreateWorkspace"/>
+					
+					<include name ="verifyNewWorkspaceDisplayInList"/>
+					
+					<include name ="verifyupdateDetailsInExistingWorkspace"/>
+					
+					<include name ="verifyRoleAssignWindowWithoutRoleSelectionInWorkspace"/>
+					
+					<include name ="verifyRoleAssignWindowWithoutUserGroupSelectionInWorkspace"/>
+					
+					<include name ="verifyWorkspaceSearchWithPagination"/>
+					
+				
+					<include name="verifyadminCanAddUserWithRolesInUserGroupOnWorkspaceSection"/>
+					
+					<include name="verifygroupDetailsShouldDisplayedCorrectlyAfterGroupHasBeenAddedToWorkspace"/>
+					
+					<include name="verifyUserDetailsShouldDisplayedCorrectlyAfterUserHasBeenAddedToWorkspace"/>
+					
+					<include name="verifyadminCanRemoveRolesFromUserGroupOnWorkspaceSection"/>
+					
+					<include name="verifyUserDetailsShouldBeDisplayedCorrectlyAfterUserHasBeenRemovedFromWorkspace"/>
+					
+					<include name="verifyGroupDetailsShouldBeDisplayedCorrectlyAfterRoleHasBeenRemovedFromWorkspace"/>
+					
+					<include name="verifyToastMessageReceivedWhenUserSelectWorkspace"/>
+					
+					<include name="verifyallUIComponentsOfNewWorkspaceScreen"/>
+					
+					<include name="verifyAdminAssignMutipleRolesToUserGroupOnWorkspaceHighestPreceedingOneShouldBeDisplayed"/>
+					
+					<include name="verifySequenceOfRoleWhileRemovingMultipleRolesFromUserGroupOnWorkspace"/>
+									
+				
+				
+				
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,12 @@
+/reports
+.project
+.classpath
+/test-output
+/.settings
+/target
+application.log
+**reportdoc/zephyrReportDoc.xlsx
+src/main/resources/reportdoc/*
+**/logs
+src/main/resources/config/config.properties
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Generic" >
+	
+<!-- 	<listeners>
+		<listener class-name="icedq.automation.framework.reports.GenerateTestNGReport"/>
+	</listeners> -->
+	
+<!-- 	<listeners>
+		<listener class-name="icedq.automation.framework.reports.MyTransformer"/>
+	</listeners> -->
+	
+	<test name="GenericTest">
+		<!-- <parameter name="browser" value="headlessChrome" /> -->
+		<!-- <parameter name="browser" value="chrome" />
+			<parameter name="applicationURL" value="https://uat.electrik.ai:9400/#/login" />
+		<parameter name="userName" value="artionlock@yahoo.com" />
+		<parameter name="password" value="1@3$5Eai" />
+		<parameter name="os" value="Windows" />
+		<parameter name="db" value="Oracle" />
+		<parameter name="cycleId" value="26c463de-55b4-487e-90e2-29b87cf4dd50" />
+		<parameter name="version" value="15.1.0" />
+		<parameter name="versionId" value="14622" />
+		<parameter name="fixVersionId" value="" />
+		<parameter name="projectId" value="11300" />
+		<parameter name="projectKey" value="IC2" />
+		<parameter name="executionKey" value="IC2-4487" />
+		<parameter name="planKey" value="IC2-4416" />
+		<parameter name="assignee" value="pdt" />
+		<parameter name="createIssue" value="false" />
+		<parameter name="updateXrayStatus" value="false" />
+		<parameter name="sendMail" value="true" />
+		<parameter name="seqNumber" value="1" />
+		<parameter name="logging" value="true" /> -->
+	
+		<!--<groups>
+		<dependencies>
+		<group name="DepthFirst" depends-on="BreadthFirst"></group>
+		</dependencies>
+		</groups> -->
+		
+		<classes>
+
+ 		<class name="nexgen.automation.framework.connectionRepo.testcases.TestData">
+		<methods>                    
+                      <include name ="AutomateDataTest"/>
+                      <include name ="UIAutomation"/>
+                      <include name ="ApiAutomation"/>
+                      
+                                    
+       	 </methods>
+       	  </class>
+		</classes>
+	</test>
+</suite>
